@@ -38,7 +38,7 @@ FontLoader(HudRef, {"Bold/FontBold1", "Italic/ItalicFont1", "Font1", "Font2"})
 ```
 or
 ```lua
-FontLoader(HudRef, "Bold/FontBold1", "Fonts/Bold")
+FontLoader(HudRef, "FontBold1", "Fonts/Bold")
 FontLoader(HudRef, "ItalicFont1", "Fonts/Italic")
 FontLoader(HudRef, "Font1")
 FontLoader(HudRef, "Font2")

@@ -36,3 +36,6 @@ If you have any subfolders in your folder "Fonts" that'll be no problem. You can
 ```lua
 FontLoader(HudRef, {"Bold/FontBold1", "Italic/ItalicFont1", "Font1", "Font2"})
 ```
+
+# Credits/License
+Made by MikeyRay. Do with the code what you want, just credit me.

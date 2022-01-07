@@ -11,7 +11,7 @@ A font loader for T7 (Black Ops III)
 4. Go into your map's main lua file (usually called t7hud_zm_custom) and add `require("UI.T7FontLoader")`
 
 # How to use
-To use the FontLoader, you must first open your main HUD file (usually called t7hud_zm_custom). Once that's been done, go to your `PreLoadCallback` function. Above `CoD.Zombie.CommonPreLoadHud(HudRef, InstanceRef)` is where we'll get started.
+To use the FontLoader, you must first open your main HUD file (usually called t7hud_zm_custom). Once that's been done, go to your `PreLoadCallback` function. Above `CoD.Zombie.CommonPreLoadHud(self, controller)` is where we'll get started.
 
 The FontLoader comes with 3 parameters: `Sender, Fonts, filePath`. filePath is an optional parameter, as that by default is set to the "Fonts" folder. If you fail to provide a value to Sender or Fonts, you'll be greeted with an Error Message saying you've not put a value in.
 
@@ -22,26 +22,26 @@ Important things to note: No file extension has to be added to the "Fonts" param
 The FontLoader can be called in 2 ways, the first is as follows and is the "easier to read" one:
 
 ```lua
-FontLoader(HudRef, "Font1")
-FontLoader(HudRef, "Font2")
-FontLoader(HudRef, "Font3")
-FontLoader(HudRef, "Font4")
+FontLoader(self, "Font1")
+FontLoader(self, "Font2")
+FontLoader(self, "Font3")
+FontLoader(self, "Font4")
 ```
 You can also however provide a table like so:
 ```lua
-FontLoader(HudRef, {"Font1", "Font2", "Font3", "Font4"})
+FontLoader(self, {"Font1", "Font2", "Font3", "Font4"})
 ```
 
 If you have any subfolders in your folder "Fonts" that'll be no problem. You can simply add that to the string like the example provided below:
 ```lua
-FontLoader(HudRef, {"Bold/FontBold1", "Italic/ItalicFont1", "Font1", "Font2"})
+FontLoader(self, {"Bold/FontBold1", "Italic/ItalicFont1", "Font1", "Font2"})
 ```
 or
 ```lua
-FontLoader(HudRef, "FontBold1", "Fonts/Bold")
-FontLoader(HudRef, "ItalicFont1", "Fonts/Italic")
-FontLoader(HudRef, "Font1")
-FontLoader(HudRef, "Font2")
+FontLoader(self, "FontBold1", "Fonts/Bold")
+FontLoader(self, "ItalicFont1", "Fonts/Italic")
+FontLoader(self, "Font1")
+FontLoader(self, "Font2")
 ```
 
 # Credits/License

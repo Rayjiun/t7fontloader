@@ -45,4 +45,4 @@ FontLoader(self, "Font2")
 ```
 
 # Credits/License
-Made by MikeyRay. Do with the code what you want, just credit me.
+Made by Rayjiun. Do with the code what you want, just credit me.
